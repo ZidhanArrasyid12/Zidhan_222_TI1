@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Zidhan Arrasyid">
+    <title>Ini Judul</title>
+    <style>
+        * {
+            font-family: poppins;
+        }
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Formulir Pendaftaran Mahasiswa Baru Institut Teknologi Telkom Purwokerto</h2>
+    <hr>
+    <form>
+        <img src="Images/ittp.jpg" width="200px"><br>
+        <label>Nama Lengkap :</label>
+            <input type="text"><br>
+
+        <label> Email :</label>
+            <input type="email" id="email" name="email"><br>
+
+        <label for="TL">Tanggal Lahir :</label>
+            <input type="date" id="birthday" name="birthday"><br>
+
+        <label for="quantity">Jumlah saudara:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10"><br>
+
+        <label>Jenis Kelamin :</label>
+            <input type="radio" id="laki" value="Laki-Laki">Laki-Laki
+            <input type="radio" id="perempuan" value="perempuan">perempuan<br>
+
+        <label>Golongan darah :</label>
+            <input type="checkbox" value="A">A
+            <input type="checkbox" value="B">B
+            <input type="checkbox" value="AB">AB
+            <input type="checkbox" value="O">O<br>
+
+        <label for="Addres">Alamat:</label><br>
+            <textarea id="Alamat" name="Alamat" rows="4" cols="40"></textarea><br>
+
+        <label for="phone">Enter your phone number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+
+        <label for="choose">Pilihan mata kuliah :</label>
+        <select name="matkul" id="matkul">
+            <option value="Teknik Informatika">Teknik Informatika</option>
+            <option value="Sistem Informasi">Sistem Informasi</option>
+            <option value="Teknik Telekomunikasi">Teknik Telekomunikasi</option>
+            <option value="Teknik Elektro">Teknik Elektro</option>
+        </select><br>
+        <hr>
+        <p>Silahkan Input Data Berikut</p>
+        <label for="myfile">Ijazah :</label>
+            <input type="file" id="myfile" name="myfile"><br>
+        <label for="myfile">KTP :</label>
+            <input type="file" id="myfile" name="myfile"><br>
+        <label for="myfile">KK :</label>
+            <input type="file" id="myfile" name="myfile"><br>
+        <p>Maximum file size : 3mb</p>
+        <hr>
+        <p>Untuk info lebih lanjut mengenai ITTP bisa klik gambar dibawah</p>
+        <a href="https://ittelkom-pwt.ac.id/">
+        <img src="Images/telkom.jpg" alt="Institut Teknologi Telkom Purwokerto" style="width:200px">
+        </a><br>
+        <label>Jika anda sudah yakin silahkan klik tombol submit : </label>
+            <input type="submit" value="submit"><br>
+    </form>
+</body>
+</html>
